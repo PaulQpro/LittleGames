@@ -12,16 +12,25 @@ using LittleGames.Games;
 namespace LittleGames
 {
     
-    public partial class MemoCard : Button
+    public class MemoCardCountries : Button
     {
-        public enum MemoCardStates
-        {
-            Closed,
-            Opened,
-            Paired
-        }
         public MemoCountries.MemoObjects? CardObject = null;
         public bool INITIALIZED = false;
         public MemoCardStates State = MemoCardStates.Closed;
+        public int Pair;
+    }
+    public enum MemoCardStates
+    {
+        Closed,
+        Opened,
+        Paired
+    }
+
+    public class MemoCardColors : Button
+    {
+        public MemoColors.MemoColorsEnum color;
+        public bool INITIALIZED = false;
+        public MemoCardStates State = MemoCardStates.Closed;
+        public int Pair;
     }
 }

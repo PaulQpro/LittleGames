@@ -59,7 +59,6 @@
             // 
             // OptionsBtn
             // 
-            this.OptionsBtn.Enabled = false;
             this.OptionsBtn.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.OptionsBtn.Location = new System.Drawing.Point(12, 282);
             this.OptionsBtn.Name = "OptionsBtn";
@@ -92,7 +91,7 @@
             this.NFO.UseVisualStyleBackColor = true;
             this.NFO.Click += new System.EventHandler(this.NFO_Click);
             // 
-            // Menu
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,8 +101,9 @@
             this.Controls.Add(this.OptionsBtn);
             this.Controls.Add(this.PlayBtn);
             this.Controls.Add(this.Title);
-            this.Name = "Menu";
+            this.Name = "MainMenu";
             this.Text = "Paul\'s Little Games Collection";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

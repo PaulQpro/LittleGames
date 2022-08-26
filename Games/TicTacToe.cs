@@ -20,11 +20,19 @@ namespace LittleGames.Games
         private int filled = 0;
         private static Cell[][] cells  = new Cell[3][];
         private int players;
-        Bot bot = new Bot(cells);
-        public TicTacToe(int players)
+        Bot bot = new Bot(cells); string lang;
+        ResXResourceSet DefaultLang;
+        ResXResourceSet TicTacToeLang;
+        public TicTacToe(int players, string lang)
         {
+            this.lang = lang;
+            DefaultLang = new($"Lang\\{lang}.resx");
+            TicTacToeLang = new($"Lang\\TicTacToe\\{lang}.resx");
             this.players = players;
             InitializeComponent();
+            InfoLabel.Text = $"'X' {TicTacToeLang.GetString("Move")}";
+            Reset.Text = DefaultLang.GetString("Reset");
+            CloseBtn.Text = DefaultLang.GetString("Close");
             for (int i = 0; i < 3; i++)
             {
                 cells[i] = new Cell[3];
@@ -39,20 +47,30 @@ namespace LittleGames.Games
                 {
                     Console.WriteLine("m1");
                     end = true;
-                    InfoLabel.Text = "'" + sym + "' wins!";
+                    InfoLabel.Text = "'" + sym + $"' {TicTacToeLang.GetString("Win")}";
+                    MessageBox.Show("'" + sym + $"' {TicTacToeLang.GetString("Win")}");
                 }
                 if (cells[0][i].sym == sym && cells[1][i].sym == sym && cells[2][i].sym == sym)
                 {
                     Console.WriteLine("m2");
                     end = true;
-                    InfoLabel.Text = "'" + sym + "' wins!";
+                    InfoLabel.Text = "'" + sym + $"' {TicTacToeLang.GetString("Win")}";
+                    MessageBox.Show("'" + sym + $"' {TicTacToeLang.GetString("Win")}");
                 }
             }
-            if ((cells[0][0].sym == sym || cells[0][2].sym == sym) && cells[1][1].sym == sym && (cells[2][0].sym == sym || cells[2][2].sym == sym))
+            if (cells[0][0].sym == sym && cells[1][1].sym == sym && cells[2][2].sym == sym)
             {
                 Console.WriteLine("m3");
                 end = true;
-                InfoLabel.Text = "'" + sym + "' wins!";
+                InfoLabel.Text = "'" + sym + $"' {TicTacToeLang.GetString("Win")}";
+                MessageBox.Show("'" + sym + $"' {TicTacToeLang.GetString("Win")}");
+            }
+            if (cells[0][2].sym == sym && cells[1][1].sym == sym && cells[2][0].sym == sym)
+            {
+                Console.WriteLine("m3");
+                end = true;
+                InfoLabel.Text = "'" + sym + $"' {TicTacToeLang.GetString("Win")}";
+                MessageBox.Show("'" + sym + $"' {TicTacToeLang.GetString("Win")}");
             }
         }
 
@@ -68,7 +86,7 @@ namespace LittleGames.Games
                 if (X)
                 {
                     X = false;
-                    InfoLabel.Text = "'0' Move";
+                    InfoLabel.Text = $"'0' {TicTacToeLang.GetString("Move")}";
                     cell.BackgroundImage = cross;
                     cell.sym = 'X';
                     Win('X');
@@ -76,7 +94,7 @@ namespace LittleGames.Games
                 else
                 {
                     X = true;
-                    InfoLabel.Text = "'X' Move";
+                    InfoLabel.Text = $"'X' {TicTacToeLang.GetString("Move")}";
                     cell.BackgroundImage = zero;
                     cell.sym = '0';
                     Win('0');
@@ -98,7 +116,8 @@ namespace LittleGames.Games
             }
             if(filled == 9 && !end)
             {
-                InfoLabel.Text = "Draw!";
+                InfoLabel.Text = TicTacToeLang.GetString("Draw");
+                MessageBox.Show(TicTacToeLang.GetString("Draw"));
                 end = true;
             }
         }
@@ -129,7 +148,7 @@ namespace LittleGames.Games
             }
             end = false;
             X = true;
-            InfoLabel.Text = "'X' Move";
+            InfoLabel.Text = $"'X' {TicTacToeLang.GetString("Move")}";
         }
 
         private void CloseBtn_Click(object sender, EventArgs e)

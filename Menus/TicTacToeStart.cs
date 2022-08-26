@@ -13,8 +13,10 @@ namespace LittleGames
 {
     public partial class TicTacToeStart : Form
     {
-        public TicTacToeStart()
+        string lang;
+        public TicTacToeStart(string lang)
         {
+            this.lang = lang;
             InitializeComponent();
         }
 
@@ -27,7 +29,7 @@ namespace LittleGames
             }
             ShowInTaskbar = false;
             Visible = false;
-            new TicTacToe(Players.Value).ShowDialog(this);
+            new TicTacToe(Players.Value, lang).ShowDialog(this);
         }
 
         private void Players_Scroll(object sender, EventArgs e)

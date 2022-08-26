@@ -117,65 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="zero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\zero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="card" xml:space="preserve">
+    <value>Карта</value>
+    <comment>Default Card Title</comment>
   </data>
-  <data name="Mail_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Mail_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p1" xml:space="preserve">
+    <value>Россия</value>
+    <comment>ru</comment>
   </data>
-  <data name="Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p10" xml:space="preserve">
+    <value>Египет</value>
+    <comment>eg</comment>
   </data>
-  <data name="Shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Shutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p2" xml:space="preserve">
+    <value>США</value>
+    <comment>us</comment>
   </data>
-  <data name="Mail_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Mail_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p3" xml:space="preserve">
+    <value>Велико
+британя</value>
+    <comment>en</comment>
   </data>
-  <data name="wallpaperLoad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\wallpaperLoad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p4" xml:space="preserve">
+    <value>Германия</value>
+    <comment>de</comment>
   </data>
-  <data name="wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p5" xml:space="preserve">
+    <value>Франция</value>
+    <comment>fr</comment>
   </data>
-  <data name="BSOD_Overflow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\BSOD_Overflow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p6" xml:space="preserve">
+    <value>Китай</value>
+    <comment>cn</comment>
   </data>
-  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p7" xml:space="preserve">
+    <value>Шведция</value>
+    <comment>se</comment>
   </data>
-  <data name="BSOD_DDoS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\BSOD_DDoS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p8" xml:space="preserve">
+    <value>Бразилия</value>
+    <comment>br</comment>
   </data>
-  <data name="Anon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Anon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="p9" xml:space="preserve">
+    <value>Италия</value>
+    <comment>it</comment>
   </data>
-  <data name="Boss" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Boss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\User1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\User2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\User3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\User4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\User5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\User6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\User7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\User8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="win" xml:space="preserve">
+    <value>Вы Победили!</value>
   </data>
 </root>

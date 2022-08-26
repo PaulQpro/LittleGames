@@ -1,7 +1,83 @@
-﻿namespace LittleGames.Games
+﻿using System.Resources;
+
+namespace LittleGames.Games
 {
     partial class SAS
     {
+        class Beta : Form
+        {
+            /// <summary>
+            /// Required designer variable.
+            /// </summary>
+            private System.ComponentModel.IContainer components = null;
+
+            /// <summary>
+            /// Clean up any resources being used.
+            /// </summary>
+            /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+            protected override void Dispose(bool disposing)
+            {
+                if (disposing && (components != null))
+                {
+                    components.Dispose();
+                }
+                base.Dispose(disposing);
+            }
+
+            private Button Accept = new();
+            private Button Cancel = new();
+            private Label label = new();
+            private TextBox Code = new();
+            ResXResourceSet DefaultLang;
+            ResXResourceSet SASBetaLang;
+            string lang;
+            public Beta(string lang)
+            {
+                this.lang = lang;
+                DefaultLang = new($"Lang\\{lang}.resx");
+                SASBetaLang = new($"Lang\\SAS\\Beta\\{lang}.resx");
+                Accept.Text = DefaultLang.GetString("Accept");
+                Cancel.Text = DefaultLang.GetString("Cancel");
+                label.Text = SASBetaLang.GetString("SASBeta")+"\n"+SASBetaLang.GetString("Code")+ "\nCode is:XXXX-XXXX-XXXX-XXCD-1024";
+                label.Dock = DockStyle.Top;
+                label.Height = label.Height + 20;
+                label.TextAlign = ContentAlignment.TopCenter;
+                Code.Width = label.Width;
+                Code.Height = 25;
+                Code.Location = new System.Drawing.Point(0, 0);
+                Text = SASBetaLang.GetString("SASBeta");
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+                this.Size = new System.Drawing.Size(400, 200);
+                Accept.Size = new System.Drawing.Size(378 / 2, 25);
+                Accept.Location = new System.Drawing.Point(3, Size.Height-((int)(Accept.Size.Height*2.5))-4);
+                Cancel.Size = new System.Drawing.Size(378 / 2, 25);
+                Cancel.Location = new System.Drawing.Point(3+Cancel.Width, Size.Height - ((int)(Accept.Size.Height * 2.5)) - 4);
+                this.CancelButton = Cancel;
+                this.AcceptButton = Accept;
+                void cancel_handler(Object sender, EventArgs e)
+                {
+                    Close();
+                    this.DialogResult = DialogResult.Cancel;
+                }
+                void accept_handler(Object sender, EventArgs e)
+                {
+                    if (Code.Text == "XXXX-XXXX-XXXX-XXCD-1024"){
+                        Close();
+                        this.DialogResult = DialogResult.OK;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong beta code");
+                    }
+                }
+                Cancel.Click += cancel_handler;
+                Accept.Click += accept_handler;
+                this.Controls.Add(Accept);
+                this.Controls.Add(Cancel);
+                this.Controls.Add(label);
+                this.Controls.Add(Code);
+            }
+        }
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -46,7 +122,8 @@
             "Welcome to Paulsoft© Server System™ 2022",
             "Server Launched",
             "Server listening on port 443",
-            "TrackBot joined server"});
+            "TrackBot joined server",
+            "Type \"Open\" to open server to Users"});
             this.Console_window.Location = new System.Drawing.Point(0, 0);
             this.Console_window.Margin = new System.Windows.Forms.Padding(0);
             this.Console_window.Name = "Console_window";
@@ -123,6 +200,7 @@
             this.MaximizeBox = false;
             this.Name = "SAS";
             this.Text = "Paulsoft© Server System™ 2022";
+            this.Load += new System.EventHandler(this.SAS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

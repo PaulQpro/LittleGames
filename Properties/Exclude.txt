@@ -1,0 +1,4 @@
+﻿.cs
+.Designer.cs
+Exclude.txt
+.psd
