@@ -184,13 +184,13 @@ namespace LittleGames.Games
                 default:
                     break;
             }
-            if (opened == 0)
+            if (opened == 0 && fst == null)
             {
                 card.State = MemoCardStates.Opened;
                 fst = card;
                 opened++;
             }
-            else if (opened == 1)
+            else if (opened == 1 && snd == null)
             {
                 if (card != fst)
                 {
@@ -213,7 +213,7 @@ namespace LittleGames.Games
                 opened = 0;
                 return;
             }
-            if (fst.color == snd.color)
+            if (fst.color == snd.color && fst!=snd)
             {
                 fst.State = MemoCardStates.Paired;
                 snd.State = MemoCardStates.Paired;
