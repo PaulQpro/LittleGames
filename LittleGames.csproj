@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
@@ -46,6 +46,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>EN-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Lang\Memo\Colors\RU-RU.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RU-RU.resx</DependentUpon>
     </Compile>
     <Compile Update="Properties\Lang\Memo\Countries\RU-RU.Designer.cs">
       <DependentUpon>RU-RU.resx</DependentUpon>
@@ -127,6 +132,10 @@
     <EmbeddedResource Update="Properties\Lang\Memo\Colors\EN-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>EN-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Lang\Memo\Colors\RU-RU.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RU-RU.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\Lang\Memo\Countries\RU-RU.resx">
       <LastGenOutput>RU-RU.Designer.cs</LastGenOutput>

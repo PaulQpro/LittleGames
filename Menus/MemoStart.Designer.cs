@@ -69,6 +69,7 @@
             // Desk6x7
             // 
             this.Desk6x7.AutoSize = true;
+            this.Desk6x7.Enabled = false;
             this.Desk6x7.Location = new System.Drawing.Point(202, 3);
             this.Desk6x7.Name = "Desk6x7";
             this.Desk6x7.Size = new System.Drawing.Size(50, 19);

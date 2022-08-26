@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="title" xml:space="preserve">
-    <value>Memo: Colors</value>
+    <value>Мемо: Цвета</value>
   </data>
   <data name="win" xml:space="preserve">
-    <value>You Won!</value>
+    <value>Вы Победили!</value>
   </data>
 </root>

@@ -22,14 +22,14 @@ namespace LittleGames.Properties.Lang.Memo.Colors {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class EN_US {
+    internal class RU_RU {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal EN_US() {
+        internal RU_RU() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace LittleGames.Properties.Lang.Memo.Colors {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LittleGames.Properties.Lang.Memo.Colors.EN-US", typeof(EN_US).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LittleGames.Properties.Lang.Memo.Colors.RU-RU", typeof(RU_RU).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace LittleGames.Properties.Lang.Memo.Colors {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Memo: Colors.
+        ///   Ищет локализованную строку, похожую на Мемо: Цвета.
         /// </summary>
         internal static string title {
             get {
@@ -70,7 +70,7 @@ namespace LittleGames.Properties.Lang.Memo.Colors {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на You Won!.
+        ///   Ищет локализованную строку, похожую на Вы Победили!.
         /// </summary>
         internal static string win {
             get {

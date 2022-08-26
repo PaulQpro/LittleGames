@@ -61,6 +61,15 @@ namespace LittleGames.Properties.Lang.Memo.Countries {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Вы Победили!.
+        /// </summary>
+        internal static string C {
+            get {
+                return ResourceManager.GetString("C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Карта.
         /// </summary>
         internal static string card {
@@ -157,15 +166,6 @@ namespace LittleGames.Properties.Lang.Memo.Countries {
         internal static string p9 {
             get {
                 return ResourceManager.GetString("p9", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Вы Победили!.
-        /// </summary>
-        internal static string win {
-            get {
-                return ResourceManager.GetString("win", resourceCulture);
             }
         }
     }
