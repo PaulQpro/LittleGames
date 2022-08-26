@@ -32,7 +32,7 @@ namespace LittleGames
                     switch (selected[1])
                     {
                         case "4X5":
-                            new MemoCountries(lang).Show();
+                            new MemoCountries(lang).ShowDialog();
                             break;
                     }
                     break;
@@ -40,7 +40,7 @@ namespace LittleGames
                     switch (selected[1])
                     {
                         case "6X7":
-                            new MemoColors(lang).Show();
+                            new MemoColors(lang).ShowDialog();
                             break;
                     }
                     break;
